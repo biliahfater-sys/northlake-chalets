@@ -1,5 +1,7 @@
 # Northlake — Private Alpine Brokerage Website
 
+[![CI](https://github.com/biliahfater-sys/northlake-chalets/actions/workflows/ci.yml/badge.svg)](https://github.com/biliahfater-sys/northlake-chalets/actions/workflows/ci.yml)
+
 A production-ready, design-led site for a private luxury real-estate
 brokerage: cinematic chapters, a confidential Private Client Area, a
 specimen floor plan and access ledger, a premium enquiry flow, legal pages,
@@ -101,6 +103,13 @@ generative ambient score with mute, RU/EN switcher.
 - The preloader force-completes after 9 s of wall-clock time (background
   tabs never hold the page), and a click or Esc fast-forwards it
 - Optional analytics load lazily and only when configured
+
+## Deployment
+
+The project is configured for a standard Next.js Node.js host such as Vercel
+or a container platform. Set the environment variables from `.env.example`
+before going live. For static hosting, switch `next.config.ts` to
+`output: 'export'` and copy the `out/` folder to your CDN.
 
 ## Licence note for resale
 
